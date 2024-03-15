@@ -9,6 +9,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ![](./assets/images/screenshot.PNG)
 
+You can check it out live [here](https://xstephx.github.io/profile-card-component-challenge/).
+
 ## My process
 
 ### Built with
