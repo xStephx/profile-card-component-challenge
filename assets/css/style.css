@@ -1,12 +1,14 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root{
+/* Global Variables */
+:root {
     /* Colors */
 
     /* Primary */
@@ -24,13 +26,14 @@
     --font-wght-700: 700;
 }
 
-body{
+body {
     height: 100%;
     overflow: hidden;
     font-family: var(--font-family);
     background-color: var(--Dark-cyan);
 }
 
+/* Main Container */
 .bg-container {
     position: relative;
     width: 100vw;
@@ -54,6 +57,7 @@ body{
     max-width: 55%;
 }
 
+/* Card */
 .card-content {
     position: absolute;
     top: 50%;
@@ -67,7 +71,7 @@ body{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .card-content-bg-top {
@@ -88,6 +92,7 @@ body{
     height: auto;
 }
 
+/* Content For Card */
 .content {
     text-align: center;
     padding: 2em;
@@ -112,14 +117,18 @@ p {
     font-size: 1rem;
     margin: 0.2em 0;
 }
-.content .text{
+
+.content .text {
     color: var(--Dark-grayish-blue);
 }
-.line{
+
+.line {
     border-top: 0.5px solid var(--Dark-gray);
     width: 350px;
     margin: 20px 0;
 }
+
+/* Bottom Content For Card */
 .stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -127,30 +136,48 @@ p {
     align-items: center;
     padding: 0 20px;
 }
-.number{
+
+.number {
     color: var(--Very-dark-desaturated-blue);
     font-weight: var(--font-wght-700);
     font-size: var(--Font-size-name-and-stats);
 }
 
-.stats .text{
+.stats .text {
     color: var(--Dark-grayish-blue);
     font-size: 12px;
 }
 
+/* Footer */
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Responsive */
 @media(max-width: 768px) {
     #top-left-svg {
         top: -30%;
         left: -5%;
         max-width: 70%;
     }
-    
+
     #bottom-right-svg {
         bottom: -30%;
         right: -15%;
         max-width: 70%;
     }
-    
+
 }
 
 @media(max-width: 480px) {
@@ -159,13 +186,13 @@ p {
         left: -10%;
         max-width: 70%;
     }
-    
+
     #bottom-right-svg {
         bottom: -10%;
         right: -20%;
         max-width: 70%;
     }
-    
+
 }
 
 @media(max-width: 375px) {
@@ -174,18 +201,10 @@ p {
         left: -10%;
         max-width: 70%;
     }
-    
+
     #bottom-right-svg {
         bottom: -10%;
         right: -20%;
         max-width: 70%;
     }
 }
-
-.attribution {
-    position: absolute;
-    bottom: 20px; 
-    width: 100%;
-}
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
